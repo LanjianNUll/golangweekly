@@ -5,7 +5,7 @@ import path from 'path'
 export default defineConfig({
   ignoreDeadLinks: true, 
   title: 'ruanyf-weekly',
-  description: '阮一峰的技术周刊',
+  description: 'Go语言爱好者周刊',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
@@ -18,23 +18,19 @@ export default defineConfig({
   themeConfig: {
     nav: [
       {
-        text: '阮一峰的网络日志',
-        link: 'http://www.ruanyifeng.com/blog/',
-      },
-      {
-        text: '技术周刊',
-        link: 'https://github.com/ruanyf/weekly'
+        text: 'Go语言爱好者周刊',
+        link: 'https://github.com/polaris1119/golangweekly',
       }
     ],
     sidebar: {
       '/weekly/': sidebarWeekly(),
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/plantree/ruanyf-weekly' },
+      { icon: 'github', link: 'https://github.com/LanjianNUll/golangweekly' },
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present Plantree'
+      copyright: 'Copyright © 2023-present '
     },
     algolia: {
       appId: 'JMQN3OHTS2',

@@ -22,7 +22,7 @@ function fsm(content) {
             let tempArr = line.split('|')
             tempArr.forEach(str => {
                 if (str.includes('- 第')) {
-                    const issue = pattern.exec(line)[0];
+                    const issue = pattern.exec(str)[0];
                     meta[yearStatus][monthStatus].push(issue);
                 }
             });

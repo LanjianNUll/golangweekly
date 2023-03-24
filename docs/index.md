@@ -7,7 +7,7 @@ titleTemplate: Vite & Vue Powered Static Site Generator
 hero:
   name: Go语言爱好者周刊
   text: 学习, 分享, 开源
-  tagline: 出于个人学习兴趣搭建，非官方！！！官网链接在https://github.com/polaris1119/golangweekly/。 项目大部分参考 https://github.com/plantree/ruanyf-weekly 学习
+  tagline: 出于个人学习兴趣搭建，非官方！！！官网链接在  https://github.com/polaris1119/golangweekly/  项目大部分参考 https://github.com/plantree/ruanyf-weekly 学习
   actions:
     - theme: brand
       text: Start
