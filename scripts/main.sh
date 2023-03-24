@@ -3,8 +3,8 @@
 set -x
 
 curl -s -L -O https://github.com/polaris1119/golangweekly/archive/refs/heads/master.zip
-unzip -o golangweekly-master.zip
-rm golangweekly-master.zip*
+unzip -o master.zip
+rm master.zip*
 node scripts/weekly.js > scripts/weekly.json
 cp -n ./golangweekly-master/docs/issue*.md ./docs/weekly/
 cp -n ./golangweekly-master/docs/imgs ./docs/weekly/imgs
