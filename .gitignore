@@ -110,3 +110,4 @@ issue*.md
 !issue-82.md
 scripts/*.json
 .env
+*.zip
