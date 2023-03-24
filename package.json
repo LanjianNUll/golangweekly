@@ -1,0 +1,32 @@
+{
+  "name": "golang-weekly",
+  "version": "1.0.0",
+  "description": "Go语言爱好者的周刊",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanjianNUll/golang-weekly.git"
+  },
+  "author": "LanjianNUll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LanjianNUll/golang-weekly/issues"
+  },
+  "homepage": "https://github.com/LanjianNUll/golang-weekly#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.49",
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "@giscus/vue": "^2.2.8"
+  }
+}
