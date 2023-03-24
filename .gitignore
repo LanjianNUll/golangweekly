@@ -111,3 +111,5 @@ issue*.md
 scripts/*.json
 .env
 *.zip
+golangweekly-master
+golangweekly-master.zip

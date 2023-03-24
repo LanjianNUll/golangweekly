@@ -21,7 +21,7 @@ function fsm(content) {
             monthStatus = month;
             let tempArr = line.split('|')
             tempArr.forEach(str => {
-                if (str.includes('- 第')) {
+                if (str.includes('[第')) {
                     const issue = pattern.exec(str)[0];
                     meta[yearStatus][monthStatus].push(issue);
                 }
