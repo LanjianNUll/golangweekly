@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   ignoreDeadLinks: true, 
-  title: 'ruanyf-weekly',
+  title: 'Go语言爱好者的周刊',
   description: 'Go语言爱好者周刊',
   lang: 'zh-CN',
   lastUpdated: true,
@@ -33,9 +33,9 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present '
     },
     algolia: {
-      appId: 'JMQN3OHTS2',
-      apiKey: '9bb35b7fbb4b3ae36bb0f2ac9af77b5e',
-      indexName: 'ruanyf-weekly'
+      appId: 'Y01AEM9BXR',
+      apiKey: '27cc0191b7ccbc5826530ad342166c86',
+      indexName: 'golang_weekly'
     },
   }
 });

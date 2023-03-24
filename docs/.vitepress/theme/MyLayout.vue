@@ -10,10 +10,10 @@ const { Layout } = DefaultTheme
     <template #doc-after>
       <div style="margin-top: 2em">
       <Giscus
-        repo="plantree/press-comment"
-        repoId="R_kgDOIDNWUg"
+        repo="LanjianNUll/golangweekly"
+        repoId="R_kgDOJNvO0w"
         category="General"
-        categoryId="DIC_kwDOIDNWUs4CRlY7" 
+        categoryId="DIC_kwDOJNvO084CVHpo" 
         theme="light"
         lang="zh-CN"
         loading="lazy"
