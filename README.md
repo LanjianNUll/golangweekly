@@ -1,13 +1,6 @@
-# golang-weekly
+项目灵感来自 [plantree](https://github.com/plantree/ruanyf-weekly)， 大部分也参考的原仓库
 
-<p align="left">
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
-<a href="https://github.com/LanjianNull/golang-weekly/actions/workflows/weekly-deploy.yml"><img src="https://github.com/LanjianNull/golang-weekly/actions/workflows/weekly-deploy.yml/badge.svg"></a>
-</p>
-
-> 声明: 非官方！！！官网链接在https://github.com/polaris1119/golangweekly
-
-项目灵感来着 [plantree](https://github.com/plantree/ruanyf-weekly)
+[项目预览](golangweekly.vercel.app)
 
 #### 一. 背景
 

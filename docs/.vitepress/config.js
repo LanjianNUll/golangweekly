@@ -24,6 +24,10 @@ export default defineConfig({
       {
         text: '阮一峰的网络日志',
         link: 'https://github.com/ruanyf/weekly',
+      },
+      {
+        text: 'HelloGitHub月刊',
+        link: 'https://github.com/521xueweihan/HelloGitHub',
       }
     ],
     sidebar: {
@@ -76,6 +80,19 @@ function _convertParseWeeklyReadme(jsonName) {
     return config
 }
 
+function _convertParseHelloReadme(jsonName) {
+  const content = fs.readFileSync('./scripts/'+jsonName+'.json', 'utf8').toString()
+  const tree = JSON.parse(content)
+  const items = [];
+  for (let year in tree) {
+      items.push({
+        text: year + '期',
+        link: `/weekly/${jsonName}/${tree[year][0]}`
+    });
+  }
+  return items.reverse()
+}
+
 
 function golangWeekly() {
   let golang_weekly = {
@@ -95,9 +112,19 @@ function ruanWeekly() {
   return weekly;
 }
 
+function helloGithub() {
+  let weekly = {
+    text: 'HelloGitHub月刊',
+    collapsed: true,
+    items: _convertParseHelloReadme('hello-github')
+  }
+  return weekly;
+}
+
 function sidebarMenu() {
   let sidebarArr = []
   sidebarArr.push(golangWeekly())
   sidebarArr.push(ruanWeekly())
+  sidebarArr.push(helloGithub())
   return sidebarArr
 }
