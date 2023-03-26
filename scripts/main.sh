@@ -38,7 +38,7 @@ rm -rf HelloGitHub73.md
 # add pv to markdown / replace link
 files=`ls . | grep HelloGitHub`
 for file in ${files[@]}
-do 
+do
     sed -i 's/><\/img>/\/>/g' ${file}
     # sed -i '' 's/><\/img>/\/>/g' ${file}
 done
