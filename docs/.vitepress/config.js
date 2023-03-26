@@ -4,8 +4,8 @@ import path from 'path'
 
 export default defineConfig({
   ignoreDeadLinks: true, 
-  title: 'Go语言爱好者的周刊',
-  description: 'Go语言爱好者周刊',
+  title: '各类开源的周刊及资料',
+  description: '收录各类开源的周刊及资料，以便阅读和查找方便',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
@@ -20,10 +20,14 @@ export default defineConfig({
       {
         text: 'Go语言爱好者周刊',
         link: 'https://github.com/polaris1119/golangweekly',
+      },
+      {
+        text: '阮一峰的网络日志',
+        link: 'https://github.com/ruanyf/weekly',
       }
     ],
     sidebar: {
-      '/weekly/': sidebarWeekly(),
+      '/weekly/': sidebarMenu(),
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/LanjianNUll/golangweekly' },
@@ -40,8 +44,8 @@ export default defineConfig({
   }
 });
 
-function _convertParseWeeklyReadme() {
-    const content = fs.readFileSync('./scripts/weekly.json', 'utf8').toString()
+function _convertParseWeeklyReadme(jsonName) {
+    const content = fs.readFileSync('./scripts/'+jsonName+'.json', 'utf8').toString()
     const tree = JSON.parse(content)
     const config = [];
     for (let year in tree) {
@@ -51,7 +55,7 @@ function _convertParseWeeklyReadme() {
             for (let issue of tree[year][month]) {
                 items.push({
                     text: issue.split('-')[1] + '期',
-                    link: `/weekly/${issue}`
+                    link: `/weekly/${jsonName}/${issue}`
                 });
             }
             monthItems.push({
@@ -72,6 +76,28 @@ function _convertParseWeeklyReadme() {
     return config
 }
 
-function sidebarWeekly() {
-  return _convertParseWeeklyReadme();
+
+function golangWeekly() {
+  let golang_weekly = {
+    text: 'Go语言爱好者的周刊',
+    collapsed: true,
+    items: _convertParseWeeklyReadme('golang-weekly')
+  }
+  return golang_weekly;
+}
+
+function ruanWeekly() {
+  let weekly = {
+    text: '阮一峰老师的周刊',
+    collapsed: true,
+    items: _convertParseWeeklyReadme('ruan-weekly')
+  }
+  return weekly;
+}
+
+function sidebarMenu() {
+  let sidebarArr = []
+  sidebarArr.push(golangWeekly())
+  sidebarArr.push(ruanWeekly())
+  return sidebarArr
 }

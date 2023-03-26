@@ -7,6 +7,8 @@
 
 > 声明: 非官方！！！官网链接在https://github.com/polaris1119/golangweekly
 
+项目灵感来着 [plantree](https://github.com/plantree/ruanyf-weekly)
+
 #### 一. 背景
 
 个人平时比较喜欢看技术周刊，文笔简练，条理清晰。
