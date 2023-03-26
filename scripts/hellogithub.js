@@ -16,9 +16,12 @@ function fsm(content) {
             arr.forEach(element => {
                 if (element.includes(' [第')) {
                     let number = parseInt(element.slice(3,7).trim())
-                    meta[number] = [];
-                    const issue = pattern.exec(element)[0];
-                    meta[number].push(issue)
+                    // 73 期的格式有问题
+                    if (number !== 73) {
+                        meta[number] = [];
+                        const issue = pattern.exec(element)[0];
+                        meta[number].push(issue)
+                    }
                 }
             });
         }
