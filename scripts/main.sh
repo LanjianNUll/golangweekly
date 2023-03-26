@@ -26,6 +26,7 @@ node scripts/hellogithub.js > scripts/hello-github.json
 cp -n ./HelloGitHub-master/content/HelloGitHub*.md ./docs/weekly/hello-github/
 ## markdown 中的 ></img> 替换成 /> 
 cd ./docs/weekly/hello-github/ 
+rm -rf HelloGitHub73.md
 # add pv to markdown / replace link
 files=`ls . | grep HelloGitHub`
 for file in ${files[@]}
