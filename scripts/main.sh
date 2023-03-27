@@ -30,9 +30,11 @@ done
 curl -s -L -O https://github.com/521xueweihan/HelloGitHub/archive/refs/heads/master.zip
 unzip -o master.zip
 rm master.zip*
+touch scripts/hello-github.json
 node scripts/hellogithub.js > scripts/hello-github.json
 cp -n ./HelloGitHub-master/content/HelloGitHub*.md ./docs/weekly/hello-github/
 ## markdown 中的 ></img> 替换成 /> 
+mkdir docs/weekly/hello-github/
 cd ./docs/weekly/hello-github/ 
 rm -rf HelloGitHub73.md
 # add pv to markdown / replace link
