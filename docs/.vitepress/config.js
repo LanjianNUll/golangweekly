@@ -41,8 +41,8 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present '
     },
     algolia: {
-      appId: 'Y01AEM9BXR',
-      apiKey: '27cc0191b7ccbc5826530ad342166c86',
+      appId: '3XWVUQWC2K',
+      apiKey: '3c82b6e92b019bc27758bba7e2e53451',
       indexName: 'golang_weekly'
     },
   }
