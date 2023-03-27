@@ -21,7 +21,9 @@ function fsm(content) {
             monthStatus = month;
         } else if (line.startsWith('- 第')) {
             const issue = pattern.exec(line)[0];
-            meta[yearStatus][monthStatus].push(issue);
+            if(issue !== 'issue-8') {
+                meta[yearStatus][monthStatus].push(issue);
+            }
         }
         i++;
     }

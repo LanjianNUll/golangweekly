@@ -23,6 +23,7 @@ rm master.zip*
 node scripts/ruan-weekly.js > scripts/ruan-weekly.json
 cp -n ./weekly-master/docs/issue*.md ./docs/weekly/ruan-weekly/
 cd ./docs/weekly/ruan-weekly/
+rm -rf issue-8.md
 # add pv to markdown / replace link
 files=`ls . | grep issue`
 for file in ${files[@]}
