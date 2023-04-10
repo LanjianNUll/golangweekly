@@ -1,6 +1,6 @@
 项目灵感来自 [plantree](https://github.com/plantree/ruanyf-weekly)， 大部分也参考的原仓库
 
-[项目预览](golangweekly.vercel.app)
+[项目预览](https://golangweekly.vercel.app)
 
 #### 一. 背景
 
