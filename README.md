@@ -27,11 +27,20 @@
 
 #### 部署
 
-登录Vercel 官网， build 命令,覆盖默认的
+构建命令与产物目录已写在 `vercel.json` 中，无需再在 Vercel 控制台手动覆盖：
 
 ```sh
-sh scripts/main.sh && vitepress build docs
+sh scripts/main.sh && vitepress build docs   # 产物目录：docs/.vitepress/dist
+```
 
+Node.js 版本要求 26.x，已通过 `package.json` 的 `engines.node` 声明（会覆盖 Vercel 项目设置里的 Node.js Version）。
+
+本地开发同样使用 Node 26（见 `.nvmrc`）：
+
+```sh
+nvm use            # 或 fnm use
+pnpm install
+pnpm run docs:dev
 ```
 
 
